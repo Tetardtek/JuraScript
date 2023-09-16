@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Workshop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <script>
+        fetch("/navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+    </header>
+    <h1>JuraScrîpt</h1>
+    <main>
+      <h3>About us</h3>
+      <p></p>
+      <div class="articles">
+        <article>Article 1</article>
+        <article>Article 2</article>
+        <article>Article 3</article>
+        <article>Article 4</article>
+      </div>
+      <h3>Logo du crew</h3>
+      <div class="oceane"></div>
+    </main>
+    <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+  </body>
+</html>

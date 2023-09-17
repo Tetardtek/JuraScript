@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuraScrîpt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="exercice3.js"></script>
+  </head>
+
+  <body>
+      <header id="navbar">
+          <script>
+            fetch("/navbar.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+              });
+          </script>
+        </header>
+      <h1>JuraScrîpt</h1>
+      <main>
+        <h3>Exercice 3 - Les variables</h3>
+        </p>
+        <h3>Enoncé</h3>
+        <div class="articles">
+          <article style="width: 100%">
+            <p class="coment">// Declare and define three variables using a numerical value</p>
+
+              <p class="coment">// * If the three variables are equal, display "The three variables are the same" in the console</p>
+              <p class="coment">// * If only two of the variables are equal, display "Two of the variables are the same" in the console</p>
+              <p class="coment">// * If the variables are all different display "all variables are different" in the console</p>
+              </article> 
+        </div>
+      </main>
+      <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+    </body>
+    </html>

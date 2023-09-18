@@ -8,6 +8,7 @@ const a = 2;
 const b = 2;
 const c = 2;
 
+
 if (a === b && b === c) {
 console.log("The three variables are the same");
 } else if (a === b || b === c || a === c) {

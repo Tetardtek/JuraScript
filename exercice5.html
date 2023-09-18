@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuraScrîpt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="exercice5.js"></script>
+  </head>
+
+  <body>
+      <header id="navbar">
+          <script>
+            fetch("/navbar.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+              });
+          </script>
+        </header>
+      <h1>JuraScrîpt</h1>
+      <main>
+        <h3>Exercice Tableaux - Astrologie</h3>
+        </p>
+        <h3>Enoncé</h3>
+        <div class="articles">
+          <article style="width: 100%">
+            <p class="coment">// Here are our Astro signs provided as a string.</p>
+
+                const aries = `♈`,<br>
+                taurus = `♉`,<br>
+                gemini = `♊`,<br>
+                cancer = `♋`,<br>
+                leo = `♌`,<br>
+                virgo = `♍`,<br>
+                libra = `♎`,<br>
+                scorpio = `♏`,<br>
+                sagittarius = `♐`,<br>
+                capricorn = `♑`,<br>
+                aquarius = `♒`,<br>
+                pisces = `♓︎`;<br>
+                
+            <p class="coment">// In Western Astrology there are 12 signs, organized by Earth Elements (Eart, Water, Air, Fire)</p>
+            <p class="coment">// You are going to manipulate the following arrays along with this challenge:</p>
+                
+                const fireSigns = [aries, leo];<br>
+                const earthSigns = [taurus, virgo, capricorn, sagittarius];<br>
+                const airSigns = [pisces, gemini, libra, aquarius];<br>
+                const waterSigns = [scorpio, pisces];<br>
+                
+                <p class="coment"> /*  🏁 Add one final element to an array </p>
+                <p class="coment">Sagittarius is missing from fire signs please add it at the</p>
+                <p class="coment">END of the array and verify the result.</p>
+
+                <p class="coment">// ✒️ Write your code here</p>
+                
+                console.log(<br>
+                fireSigns[fireSigns.length - 1] === "♐"<br>
+                ? "Good Answer ✅"<br>
+                : "Wrong Answer ❌"<br>
+                );<br>
+                
+                <p class="coment">/* 🏁 Remove the last element of an array<br>
+                      Sagittarius should not be on earth Signs, please remove <br>
+                      Sagittarius from the array, and verify the result.<br>
+                */</p>
+
+                <p class="coment"> // ✒️ Write your code here
+
+                <p class="coment">// the line below is for testing, don't touch it :)</p>
+                console.log(earthSigns[earthSigns.length - 1] !== "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
+                
+                <p class="coment">/* 🏁 Remove one element at the begining of an array<br>
+                      Pisces should not be on air Signs, please remove Pisces <br>
+                      from the array, and verify the result.<br>
+                */</p>
+
+                <p class="coment">// ✒️ Write your code here</p>
+
+                <p class="coment">// the line below is for testing, don't touch it :)</p>
+                console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
+                
+                <p class="coment">    /*  🏁 Add one element at the beginning of an array<br>
+                    Cancer is missing from water signs please add it at the <br>
+                    BEGINNING of the array and verify the result.<br>
+                */</p>
+                
+            <p class="coment">// ✒️ Write your code here</p>
+                
+            <p class="coment">// the line below is for testing, don't touch it :)</p>
+                console.log(waterSigns[0] === "♋" ? "Good Answer ✅" : "Wrong Answer ❌");
+<br><br><br><br><br>
+            </article> 
+        </div>
+      </main>
+      <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+    </body>
+    </html>

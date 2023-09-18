@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuraScrîpt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="exercice6.js"></script>
+  </head>
+
+  <body>
+      <header id="navbar">
+          <script>
+            fetch("/navbar.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+              });
+          </script>
+        </header>
+      <h1>JuraScrîpt</h1>
+      <main>
+        <h3>Exercice Tableaux - Pratique des méthodes courantes</h3>
+        </p>
+        <h3>Enoncé</h3>
+        <div class="articles">
+          <article style="width: 100%">
+                const mysteriousString = `iu@zfiz)!uzqzf!snoi??alutargnocze&gfuzyafzygfzmgfu%f`;<br>
+                console.log('step 0 : ',  mysteriousString);
+                
+                <p class="coment">// step1 : split the myserious string it into an array, so that each letter becomes an item (the separator should be an empty string).</p>
+                const step1 = mysteriousString; <span class="coment">// TODO : change this line</span><br>
+                console.log('step 1 : ', step1);
+                
+                <p class="coment">// step2 : get a slice of the array : take elements from the 15th included to the 32nd excluded (remember indexes start at 0 !)</p>
+                const step2 = step1; <span class="coment">// TODO : change this line<br></span>
+                console.log('step 2 : ', step2);
+                
+                <p class="coment">// step3 : Splice the array to replace 2 elements from index 5 with only one element : the letter 't'</p>
+                const step3 = step2.slice(); // making a copy
+                <p class="coment">// TODO : call splice on step3 with the correct arguments</p>
+                <p class="coment">// step3.splice(...)</p>
+                console.log('step 3 : ', step3);
+                
+                <p class="coment">// step4 : reverse the array</p>
+                const step4 = step3; // TODO : change this line
+                console.log('step 4 : ', step4);
+                
+                <p class="coment">// step5 : each element of the array back into a string (the separator should be an empty string)</p>
+                const step5 = step4; // TODO : change this line<br>
+                console.log('step 5 : ', step5);<br>
+
+
+            </article> 
+        </div>
+      </main>
+      <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+    </body>
+    </html>

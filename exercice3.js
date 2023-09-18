@@ -1,31 +1,15 @@
+// Welcome to Decode, your mission is to decode the full message. Good luck
 
-/*
-  🐦 DAVID Bruno Twitter profile 🐦
+// EX 01 -  Use a loop to remove the 'X' and use console.log to reveal the message 
+const hiddenMessage = ["X", "X", "X", "X", "W", "X", "E",  "X", "X", "X", "X", "X", "L", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "L", "X", "X", "X", "X", "X", "X", "X", "X", "X", " ","X", "X", "X", "X", "X", "X", "X", "X", "D", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "O", "X", "X", "X", "X", "X", "X", "N", "X", "X", "X", "X", "E", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", ",", "X", " ", "X"]
 
-  🏁 Please take this quick challenge and rename carefully all the variable, and fix this broken code by assigning the correct 
-  variable keyword you have learned in the quest.
-  ex: const name = "David";
-
-*/
-
-const userName = "David"; // ✅ Good!  
-const userLastname = "Bruno"; // ❌ the keyword to declare the variable is missing 
+// Your code goes here
 
 
-let userPresentation = "Hi, I'm David Bruno from SF, I like to cook and meet new people."; // ❌ the variable name is not explicit. (this is David's biography)
+// EX 02 - Remove the 'X' and the even numbers
+// Hint: As this is a string you should find a way to convert into an array.
 
+const hiddenCode = "XXXXXXXXXXXXXXXXXXXXXXXXXXXCXXXXXXXOXXXXXDXXXXXXXXXXXXXXXEXXXX XXXXXXXXXXXXXXX:X0XXXXXXX2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3XXXXXX2XXXXXXXXX2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX6XXXXXXXXXXXXXXX6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2XXXXXXXXXX8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX8XXXXXXXXXXX4XXXXXXXXXXXX6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX4XXXXXXXXXXXXXXXXXXX9XXXX9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2XXX4XXXXXXXXXXX6XXXXXXXXX2XXXXXXXX3XXXXXXXX2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX4XXXXX"
 
-let userImage = "http://www.go.com/david.png"; // ❌ the variable name is not explicit and the keyword is missing (this is David's profile picture)
+// Your code goes here
 
-let userLocation = "San Francisco"; // ❌ the variable name is not explicit and the keyword is missing (try to guess what "San Francisco" could refer to)
-
-let followers = 109; // ❌ the keyword to declare the variable is missing 
-let following = 200; // ❌ the keyword to declare the variable is missing 
-
-// 🏁 Exercise 02 - David is following one more account increment the total of following account
-
-following++;
-console.log(following);
-
-following += 4;
-console.log(following);

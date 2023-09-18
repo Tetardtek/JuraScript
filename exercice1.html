@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuraScrîpt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="exercice1.js"></script>
+  </head>
+
+  <body>
+      <header id="navbar">
+          <script>
+            fetch("/navbar.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+              });
+          </script>
+        </header>
+      <h1>JuraScrîpt</h1>
+      <main>
+        <h3>Exercice - Les variables</h3>
+        </p>
+        <h3>Enoncé</h3>
+        <div class="articles">
+          <article style="width: 100%">
+            <p class="coment">🐦 DAVID Bruno Twitter profile 🐦</p>
+            
+            <p class="coment">🏁 Please take this quick challenge and rename carefully all the variable, and fix this broken code by assigning the correct</p>            
+            <p class="coment">variable keyword you have learned in the quest.</p>
+            <p class="coment">ex: const name = "David";</p>
+            
+            <p>const userName = "David"; <span class="coment">// ✅ Good!</span></p>  
+            <p>const userLastname = "Bruno"; <span class="coment">// ❌ the keyword to declare the variable is missing</span></p> 
+            
+            
+            <p>let userPresentation = "Hi, I'm David Bruno from SF, I like to cook and meet new people."; <span class="coment">// ❌ the variable name is not explicit. (this is David's biography)</span></p>
+            
+            <p>let userImage = "http://www.go.com/david.png"; <span class="coment">// ❌ the variable name is not explicit and the keyword is missing (this is David's profile picture)</span></p>
+            
+            <p>let userLocation = "San Francisco"; <span class="coment">// ❌ the variable name is not explicit and the keyword is missing (try to guess what "San Francisco" could refer to)</span></p>
+            
+            <p>let followers = 109; <span class="coment">// ❌ the keyword to declare the variable is missing</span></p> 
+            <p>let following = 200; <span class="coment">// ❌ the keyword to declare the variable is missing</span></p> 
+            
+            <p class="coment">🏁 Exercise 02 </p>
+            <p class="coment">David is following one more account increment the total of following account</p>
+            
+            <p>following++;</p>
+            <p>console.log(following);</p>
+
+            <p class="coment">// 🏁 Exercice 03 - David is following 4 more accounts decrease the total of following account</p>
+
+            <p>following += 4;</p>
+            <p>console.log(following);</p></article> 
+        </div>
+      </main>
+      <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+    </body>
+    </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuraScrîpt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="programmingbasics.js"></script>
+  </head>
+
+  <body>
+      <header id="navbar">
+          <script>
+            fetch("/navbar.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+              });
+          </script>
+        </header>
+      <h1>JuraScrîpt</h1>
+      <main>
+        <h3>Workshop - Programming basic</h3>
+        </p>
+        <h3>Simple calculator</h3>
+        <div class="articles">
+          <article style="width: 100%">
+            <form>
+
+
+              
+            </form>
+
+
+            </article> 
+        </div>
+      </main>
+      <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+    </body>
+    </html>

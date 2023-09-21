@@ -11,7 +11,7 @@
   <body>
       <header id="navbar">
           <script>
-            fetch("/navbar.html")
+            fetch("./navbar.html")
               .then((response) => response.text())
               .then((data) => {
                 document.getElementById("navbar").innerHTML = data;
@@ -37,8 +37,14 @@
             "X", "E", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", ",", "X", " ", "X"]<br>
             
           <p class="coment">// Your code goes here</p>
-          
-            
+          <p>for (let i = 0; i < hiddenMessage.length; i++) {</p>
+          <p>if (hiddenMessage[i] === "X"){</p>
+          <p>hiddenMessage.splice(i, 1);</p>
+          <p>i--;</p>
+          <p>}</p>
+          <p>}</p>
+          <p>console.log(hiddenMessage.join(``));</p>
+           
           <p class="coment"> // EX 02 - Remove the 'X' and the even numbers</p>
           <p class="coment"> // Hint: As this is a string you should find a way to convert into an array.</p>
             
@@ -57,8 +63,16 @@
             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX4XXXXX"<br>
             
           <p class="coment"> // Your code goes here</p>
-            
-            
+          <p>const arrayHiddenCode = hiddenCode.split(``);</p>
+          <p>const i = 0;</p>
+          <p>while (arrayHiddenCode.join(``).includes(`X`) ) {</p>
+          <p>for (const i of arrayHiddenCode) {</p>
+          <p>if (i === `X` || parseInt(i)%2 === 0) {</p>
+          <p>arrayHiddenCode.splice(arrayHiddenCode.indexOf(i), 1);</p>
+          <p>}</p>
+          <p>}</p>
+          <p>}</p>
+          <p>console.log(arrayHiddenCode.join(``))</p>            
             </article> 
         </div>
       </main>

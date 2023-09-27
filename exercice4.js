@@ -4,3 +4,5 @@
 // - Return the original array but with all names properly typed
 
 const people = ['JoHn', 'ChrISTiana', 'anThoNY', 'MARia', 'jaMeS', 'MIChaEl', 'jeNNIFeR'];
+
+I've to do this again !

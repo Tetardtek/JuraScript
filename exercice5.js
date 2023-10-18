@@ -24,10 +24,12 @@ const waterSigns = [scorpio, pisces];
 
 Sagittarius is missing from fire signs please add it at the
 
-END of the array and verify the result.
+END of the array and verify the result. */
 
-// ✒️ Write your code here
+// ✒️ Write your code here 
+fireSigns.push(sagittarius);
 
+// the line below is for testing, don't touch it :)
 console.log(
 fireSigns[fireSigns.length - 1] === "♐"
 ? "Good Answer ✅"
@@ -35,31 +37,33 @@ fireSigns[fireSigns.length - 1] === "♐"
 );
 /* 🏁 Remove the last element of an array
 Sagittarius should not be on earth Signs, please remove
-Sagittarius from the array, and verify the result.
-*/
+Sagittarius from the array, and verify the result. */
 
 // ✒️ Write your code here
+const index = earthSigns.indexOf(sagittarius);
+if (index > -1) {
+  earthSigns.splice(index, 1);
+}
 
 // the line below is for testing, don't touch it :)
-
 console.log(earthSigns[earthSigns.length - 1] !== "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
+
 /* 🏁 Remove one element at the begining of an array
 Pisces should not be on air Signs, please remove Pisces
-from the array, and verify the result.
-*/
+from the array, and verify the result. */
 
 // ✒️ Write your code here
+airSigns.shift();
 
 // the line below is for testing, don't touch it :)
-
 console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
+
 /* 🏁 Add one element at the beginning of an array
 Cancer is missing from water signs please add it at the
-BEGINNING of the array and verify the result.
-*/
+BEGINNING of the array and verify the result. */
 
 // ✒️ Write your code here
+waterSigns.unshift(cancer);
 
 // the line below is for testing, don't touch it :)
-
 console.log(waterSigns[0] === "♋" ? "Good Answer ✅" : "Wrong Answer ❌");

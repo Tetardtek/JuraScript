@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuraScrîpt</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="exercice1.js"></script>
+  </head>
+
+  <body>
+      <header id="navbar">
+          <script>
+            fetch("./navbarTs.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+              });
+          </script>
+        </header>
+      <h1>JuraScrîpt</h1>
+      <main>
+        <h3>TypeScript</h3>
+        </p>
+        <h3>Transformer du code JavaScript en code TypeScript</h3>
+      
+        <div class="articles">
+          <article style="width: 100%">
+            <span class="coment">function hello(name</span>: string<span class="coment">) {<br/>
+          console.log("Hello " + name);<br/>
+      }<br/>
+      <br/>
+      const firstName</span>: string<span class="coment"> = "bob";<br/>
+      <br/>
+      hello(firstName);<br/>
+      hello(firstName + " marley");<br/>
+      <br/>
+      function concat(a</span><span>: string</span><span class="coment">, b</span><span>: string</span><span class="coment">) {<br/>
+          return a + b;<br/>
+      }<br/>
+      <br/>
+      const wcs</span><span>: string</span><span class="coment"> = concat("Wild", concat("Code", "School"));<br/>
+      console.log(wcs);</span><br/>
+            </article> 
+
+        </div>
+      </main>
+      <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+    </body>
+    </html>

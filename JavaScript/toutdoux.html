@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tout Doux - To Do List</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .iframe-container {
+        width: 100%;
+        height: calc(100vh - 150px);
+        margin: 20px 0;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .iframe-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .description {
+        text-align: center;
+        margin: 10px auto 20px;
+        max-width: 800px;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="navbar">
+      <script>
+        fetch("../navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+    </header>
+
+    <h1>Tout Doux - Application To Do List</h1>
+
+    <main>
+      <p class="description">
+        Application de To Do List développée en JavaScript. Ajoutez, supprimez et gérez vos tâches quotidiennes de manière simple et efficace.
+      </p>
+
+      <div class="iframe-container">
+        <iframe src="./toutdoux/index.html" title="Application Tout Doux"></iframe>
+      </div>
+    </main>
+
+    <footer>© 2023 Kevin Turnaco - JuraScrîpt</footer>
+  </body>
+</html>
